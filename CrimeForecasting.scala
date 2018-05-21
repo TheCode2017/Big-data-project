@@ -10,7 +10,7 @@ import breeze.plot._
 object projectCluster{
   def main(args: Array[String]) {
     val sc=new SparkContext("local[*]","KMeans Clustering")
-    val data = sc.textFile("/Users/deepaks/Desktop/NIJ_CFS_PORTLAND/mod_NIJ_CFS_PORTLAND.csv")
+    val data = sc.textFile("/Users/Nitesh/Desktop/NIJ_CFS_PORTLAND/mod_NIJ_CFS_PORTLAND.csv")
     
 
     val splitData = data.map(line=> line.split(","))
